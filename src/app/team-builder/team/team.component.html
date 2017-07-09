@@ -1,0 +1,7 @@
+<div class="gga-content-wrapper">
+	<h2 (click)="revealPlayers(team.id)">{{team.id}}. {{team.name}}</h2>
+
+	<team-players [players]="team.players"
+								(onPlayerSelected)="selectPlayer($event)">
+	</team-players>
+</div>

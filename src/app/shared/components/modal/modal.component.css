@@ -1,0 +1,30 @@
+.modal-header {
+	border-bottom: 1px solid #2895dd;
+	background-color: #191717;
+	color: #fff;
+}
+
+.fade.in {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-header .close {
+	color: #2895dd;
+	text-shadow: none;
+	opacity: 1;
+}
+
+.modal-content {
+	border: 1px solid #2895dd;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+:host /deep/ .modal-body .gga-content-wrapper {
+	margin-bottom: 0;
+	border: none;
+}

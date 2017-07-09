@@ -1,0 +1,11 @@
+:host /deep/ .btn.btn-primary {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #2895dd;
+  border-color: #1e7ebe;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}

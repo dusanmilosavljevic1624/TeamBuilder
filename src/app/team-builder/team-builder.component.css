@@ -1,0 +1,21 @@
+:host /deep/ .gga-content-wrapper {
+	background-color: #191717;
+	margin-bottom: 20px;
+	border: 2px solid #2c97de;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+:host /deep/ .list-group-item {
+  background-color: #1A1A1A;
+  border: 1px solid #2c97de;
+  color: #5c5c5c;
+}
+
+:host /deep/ h2, h3 {
+	color: #fff;
+}
+
+:host > div {
+	margin-top: 50px;
+}

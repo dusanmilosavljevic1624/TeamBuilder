@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<team *ngFor="let team of teams" [team]="team"></team>
+		</div>
+
+		<div class="col-md-4">
+			<builder-lobby (onStart)="lobbyModal.show()"></builder-lobby>
+		</div>
+	</div>
+</div>
+
+<modal #lobbyModal [title]="'Lobby Modal'">
+	<builder-lobby></builder-lobby>
+</modal>
