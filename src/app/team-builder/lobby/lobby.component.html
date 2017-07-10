@@ -2,14 +2,13 @@
 	<h2>Lobby</h2>
 	
 	<div class="list-group">
-		<div class="list-group-item" *ngFor="let player of players"
-				(click)="removePlayer(player)">
-			{{player.username}}
-		</div>
+		<player *ngFor="let player of players" [player]="player"
+			(onPlayerClicked)="removePlayer($event)">
+		</player>
 	</div>
 
 	<button class="btn btn-primary" [disabled]="players.length < 10"
-					(click)="onStartClicked()">
+		(click)="onStartClicked()">
 		Start
 	</button>
 </div>

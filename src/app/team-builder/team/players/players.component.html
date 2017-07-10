@@ -1,6 +1,5 @@
 <ul class="list-group" [@playerState]="visible">
-  <li *ngFor="let player of players" class="list-group-item" 
-      (click)="selectPlayer(player)">
-    {{player.username}}
-  </li>
+  <player *ngFor="let player of players" [player]="player"
+		(onPlayerClicked)="selectPlayer($event)">
+  </player>
 </ul>
