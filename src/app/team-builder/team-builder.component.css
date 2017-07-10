@@ -12,6 +12,10 @@
   color: #5c5c5c;
 }
 
+:host /deep/ .list-group-item:hover {
+  background-color: #333;
+}
+
 :host /deep/ h2, h3 {
 	color: #fff;
 }
